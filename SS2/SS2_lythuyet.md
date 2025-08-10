@@ -16,7 +16,7 @@ Offline
 2. Nguyễn Quốc Quang Minh - Lớp 10 - Game (Val, CS2): 
 3. Nguyễn Phúc Nguyên - Lớp 10 - Đá bóng, Đầu tư, ..
 4. Nguyễn Minh Nghĩa - Lớp 12 - Music, Anime
-5. Long (Ezra Nguyen) - Lớp 11 - Thích mọi thứ
+5. Hải Long (Ezra Nguyen) - Lớp 11 - Thích mọi thứ
 
 
 
