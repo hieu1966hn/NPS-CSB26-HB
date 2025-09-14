@@ -76,3 +76,4 @@ def binary_search(arr, num):
 print(binary_search(nums, 8))
 print(binary_search(nums, 100))
 print(binary_search(nums, 1000))
+
