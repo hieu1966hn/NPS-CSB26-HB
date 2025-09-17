@@ -18,3 +18,5 @@ scores = [7, 9, 5, 10, 8, 6, 9, 4]
 - Nếu không -> in ra "Không có học sinh nào đạt điểm này"
 4) In ra tần suất xuất hiện của mỗi điểm số (VD: điểm 9 xuất hiện 2 lần)
 5) Tính điểm trung bình, trung vị và mode - điểm xuất hiện nhiều nhất.
+
+

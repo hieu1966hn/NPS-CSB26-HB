@@ -60,6 +60,7 @@ print(scores_bubble) # [10, 9, 9, 8, 7, 6, 5, 4]
 print(F'Điểm cao nhất là {scores_bubble[0]}')
 print(F'Điểm thấp nhất là {scores_bubble[len(scores_bubble) - 1]}')
 
+## Cách truyền thống;
 x = int(input("Mời người dùng nhập điểm: "))
 # Kiểm tra xem có học sinh nào đạt điểm x hay không
 dem = 0 
