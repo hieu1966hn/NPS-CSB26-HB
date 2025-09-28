@@ -1,0 +1,11 @@
+I have a problem with many large, technical websites.
+
+Often times, I’ll want to refer to different pages at the same time. So I’ll CMD + click “a couple times” while browsing around and before I know it, I have 12 new tabs open – all indistinguishable from each other because they share the same favicon.
+
+PostHog.com has the same problem – especially as the site has grown from supporting a handful of paid products to over a dozen.
+
+As I looked for ways to solve this explosion of pages, I started to question many of the typical patterns that marketing & docs websites have today.
+
+Long-form scrolling. Oversized footers. Absurd whitespace.
+
+These website encourage scrolling, but just to get people to the bottom of the page? And then what?
