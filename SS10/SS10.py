@@ -66,7 +66,7 @@ student_score_ten = [5.0, 7.0, 8.0, 10.0, 9.0]
 # print(list(students_upper))
 
 #### Xử lý bài toán bộ đếm số từ
-import string
+import string # có nhiều hằng tiện lợi. string.punctuation - một chuỗi gồm các ký hiệu câu: !"##$%^&*
 
 def word_freq_counter(text):
     word_freq = {} # từ điển rỗng => để lưu tần suất xuất hiện.
@@ -75,7 +75,43 @@ def word_freq_counter(text):
     
     # Với mỗi ký tự char trong token, giữ lại ký tự đó nếu nó không phải là dấu câu. Rồi nối lại thành một từ mới
     # VD: "hello," => "hello"
-    words = map(lambda word: "".join(char for char in word if char not in string.punctuation)
-                , words)
+    words = map(lambda word: "".join(char for char in word if char not in string.punctuation), words)
     words = list(words) # map trả về một iterator; list(words) biến nó thành danh sách thực sự.
+    
+    
+    for word in words: # duyệt từng từ trong danh sách đã xử lý
+        word_freq[word] = word_freq.get(word, 0) + 1 # Lấy giá trị hiện có 
+        # (Nếu chưa có thì trả về 0), rồi cộng 1 để tăng bộ đếm
+    return word_freq
+        
+## Đọc file text
+
+text = """
+I have a problem with many large, technical websites.
+
+Often times, I’ll want to refer to different pages at the same time. So I’ll CMD + click “a couple times” while browsing around and before I know it, I have 12 new tabs open – all indistinguishable from each other because they share the same favicon.
+
+PostHog.com has the same problem – especially as the site has grown from supporting a handful of paid products to over a dozen.
+
+As I looked for ways to solve this explosion of pages, I started to question many of the typical patterns that marketing & docs websites have today.
+
+Long-form scrolling. Oversized footers. Absurd whitespace.
+
+These website encourage scrolling, but just to get people to the bottom of the page? And then what?
+"""
+    
+
+print(word_freq_counter(text))
+        
+    
+# words = map(lambda word: "".join(char for char in word if char not in string.punctuation), words)
+# words = list(words) # map trả về một iterator; list(words) biến nó thành danh sách thực sự.
+cleaned_words = []
+for word in words:
+    new_word = "" # Chuỗi mỡi chứa ký tự không có dấu câu.
+    for char in word:
+        if char in string.punctuation: # NẾU KÝ TỰ không phải dấu câu
+            new_word += char #  thì giữ lại ký tự đó
+    cleaned_words.append(new_word) # Thêm từ đã làm sạch vào danh sách mới
+words = cleaned_words
     
