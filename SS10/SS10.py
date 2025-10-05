@@ -110,7 +110,7 @@ cleaned_words = []
 for word in words:
     new_word = "" # Chuỗi mỡi chứa ký tự không có dấu câu.
     for char in word:
-        if char in string.punctuation: # NẾU KÝ TỰ không phải dấu câu
+        if char not in string.punctuation: # NẾU KÝ TỰ không phải dấu câu
             new_word += char #  thì giữ lại ký tự đó
     cleaned_words.append(new_word) # Thêm từ đã làm sạch vào danh sách mới
 words = cleaned_words
