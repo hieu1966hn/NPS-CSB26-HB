@@ -106,12 +106,12 @@ print(word_freq_counter(text))
     
 # words = map(lambda word: "".join(char for char in word if char not in string.punctuation), words)
 # words = list(words) # map trả về một iterator; list(words) biến nó thành danh sách thực sự.
-cleaned_words = []
-for word in words:
-    new_word = "" # Chuỗi mỡi chứa ký tự không có dấu câu.
-    for char in word:
-        if char not in string.punctuation: # NẾU KÝ TỰ không phải dấu câu
-            new_word += char #  thì giữ lại ký tự đó
-    cleaned_words.append(new_word) # Thêm từ đã làm sạch vào danh sách mới
-words = cleaned_words
+# cleaned_words = []
+# for word in words:
+#     new_word = "" # Chuỗi mỡi chứa ký tự không có dấu câu.
+#     for char in word:
+#         if char not in string.punctuation: # NẾU KÝ TỰ không phải dấu câu
+#             new_word += char #  thì giữ lại ký tự đó
+#     cleaned_words.append(new_word) # Thêm từ đã làm sạch vào danh sách mới
+# words = cleaned_words
     
